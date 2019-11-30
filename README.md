@@ -2,9 +2,9 @@
 Project from communications laboratory.
 
 ## Project Organization
-### /docs
+### docs/
 Filter documentation and images
-### /schm
+### schm/
 Schematics
-### /src
+### src/
 Arduino code
