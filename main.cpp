@@ -74,7 +74,7 @@ void enable_timer1 () {
   TCCR1B ^= TCCR1B;
   TCCR1B |= (1<<WGM12);
   TCCR1B |= (1<<CS10);
-  //TCCR1B |= (1<<CS12);
+  TCCR1B |= (1<<CS11);
   TIFR1 ^= TIFR1;
   TIMSK1 |= (1<<OCIE1A);
   TCCR1C ^= TCCR1C;
@@ -157,7 +157,7 @@ void desserialize_my_data (int data_size) {
     if (i == j-1)
       Serial.print("\n");
   }
-  Serial.println("Communication finished.");
+  Serial.println("Communication finished.\n");
 }
 
 void setup() {
